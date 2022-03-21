@@ -9,14 +9,12 @@ using namespace std;
 #define beshi > 
 
 int main() {
-songkha boyos;
-dekhai "Apnar boyos:";
-nei boyos;
-jodi (boyos beshi 18) {
-    dekhai "Adult";
-}
-nahole {
-    dekhai "Child";
-}
-
+    songkha boyos;
+    dekhai "Apnar boyos:";
+    nei boyos;
+    jodi (boyos beshi 18) {
+        dekhai "Adult";
+    }
+    nahole {
+        dekhai "Child";
 }

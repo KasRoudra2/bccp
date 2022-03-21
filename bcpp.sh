@@ -38,9 +38,10 @@ done
 echo "" >> "${filename}.cpp"
 echo "int main() {" >> "${filename}.cpp"
 
-cat $1 >> "${filename}.cpp"
+while IFS= read -r line; do
+    echo -e "    $line" >> "${filename}.cpp"
+done < $1
 
-echo "" >> "${filename}.cpp"
 echo "}" >> "${filename}.cpp"
 
 if ! [ `command -v g++` ]; then
