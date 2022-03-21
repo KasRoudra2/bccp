@@ -3,15 +3,17 @@
 bcpp() {
     
 declare -A defines=(
-[shuru]="#define shuru int main() {"
+#[shuru]="#define shuru int main() {"
 [songkha]="#define songkha int"
 [jodi]="#define jodi if"
+[othoba]="#define othoba else if"
 [nahole]="#define nahole else"
 [dekhai]="#define dekhai cout <<"
 [nei]="#define nei cin >> "
 [beshi]="#define beshi > "
 [kom]="#define kom <"
-[shesh]="#define shesh return 0; }"
+[soman]="#define soman =="
+#[shesh]="#define shesh return 0; }"
 )
 
 if ! [[ -f $1 ]]; then
@@ -34,8 +36,12 @@ for define in "${!defines[@]}"; do
 done
 
 echo "" >> "${filename}.cpp"
+echo "int main() {" >> "${filename}.cpp"
 
 cat $1 >> "${filename}.cpp"
+
+echo "" >> "${filename}.cpp"
+echo "}" >> "${filename}.cpp"
 
 if ! [ `command -v g++` ]; then
     echo "G++ Required!"
