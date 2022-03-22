@@ -10,7 +10,7 @@
 
 ##### Clone this repo
 ```
-git clone https://github.com/KasRoudra2/bcpp && cd bccp
+git clone https://github.com/KasRoudra2/bcpp && cd bcpp
 ```
 
 ##### Run the test bcpp file or your own one
@@ -90,7 +90,7 @@ This is entirely CPP based, so you can always write pure CPP codes in bccp file
 
 
 ### Credit
-Inspired from [bhai-lang(https://github.com/DulLabs/bhai-lang). But entire bash code is written by me
+Inspired from [bhai-lang](https://github.com/DulLabs/bhai-lang). But entire bash code is written by me
 
 ### [~] Find Me on :
 - [![Github](https://img.shields.io/badge/Github-KasRoudra-green?style=for-the-badge&logo=github)](https://github.com/KasRoudra2)
